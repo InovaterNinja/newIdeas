@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ADE WEB PAGES</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            float: left;
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        article {
+            float: left;
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE ADE WEB PAGES</h1>
+    </header>
+    <nav>
+        <h2>PROJECTS</h2>
+        <button onclick="openPage('https://adjustablevoltageregulator.netlify.app/')">ADJ VOLTAGE REG</button>
+        <button onclick="openPage('https://65e6190b0fc94e20e6684e71--leafy-baklava-ab0c32.netlify.app/#type1')">ACTIVE FILTERS</button>
+        <button onclick="openPage('project3.html')">PROJECT 3</button>
+        <!-- Add more buttons for your projects here -->
+    </nav>
+    <article id="adjVoltageReg">
+        <h2>THE PROJECTS  </h2>
+        <p>Content for ADJ VOLTAGE REG project goes here.</p>
+    </article>
+    <article id="project2" style="display: none;">
+        <h2>PROJECT 2</h2>
+        <p>Content for PROJECT 2 goes here.</p>
+    </article>
+    <article id="project3" style="display: none;">
+        <h2>PROJECT 3</h2>
+        <p>Content for PROJECT 3 goes here.</p>
+    </article>
+    <!-- Add more articles for your projects here -->
+
+    <script>
+        function openPage(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
